@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>ニュートピア サウンドテストROM 生成ツール v2.6</title>
+<title>ニュートピア（日本版） サウンドテストROM 生成ツール v2.6</title>
 <style>
   body { font-family: sans-serif; background: #1a1a2e; color: #eee; max-width: 640px; margin: 30px auto; padding: 0 16px; }
   h1 { font-size: 1.35rem; border-bottom: 2px solid #4ecca3; padding-bottom: 6px; }
@@ -15,10 +15,10 @@
 </style>
 </head>
 <body>
-<h1>ニュートピア サウンドテストROM 生成ツール v2.6</h1>
+<h1>ニュートピア（日本版） サウンドテストROM 生成ツール v2.6</h1>
 
 <div class="card">
-  <p>手元の『ニュートピア』の <code>.pce</code> ファイルを選択してください。</p>
+  <p>手元の『ニュートピア（日本版）』の <code>.pce</code> ファイルを選択してください。</p>
   <input type="file" id="romFile" accept=".pce,.bin">
   <button id="buildBtn" disabled onclick="buildRom()">サウンドテストROMを生成してダウンロード</button>
   <div id="log" class="log">ROMファイルを選択してください。</div>
@@ -279,7 +279,7 @@ function buildRom() {
   a.click();
 
   document.getElementById('log').textContent =
-    `v2.6 生成完了！ (本体サイズ: ${code.length} bytes)\nneutopia_soundtest_v26.pce を jspce に読み込んでください。`;
+    `v2.6 生成完了！取り扱いは自己責任で！ (本体サイズ: ${code.length} bytes)\nneutopia_soundtest_v26.pce を jspce に読み込んでください。`;
 }
 </script>
 </body>
